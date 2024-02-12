@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            form{
+                background-color:lightcyan;
+                width:fit-content;
+                padding: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            h1{
+                word-spacing: 2px;
+                color: blue;
+                text-align: center;
+            }
+            input[type=text],[type=password]{
+                width:90%;
+                height: 30px;
+                background-color: white;
+                padding-left: 10px;
+                border: none;
+                border-radius: 10px;
+            }
+            input[type=submit],[type=reset]{
+                height: 30px;
+                width: 90px;
+                border: none;
+                border-radius: 10px;
+            }
+            input[type=reset]{
+                background-color: red;
+                color: white;
+            }
+            input[type=submit]{ 
+                background-color: greenyellow;
+            }
+        </style>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="padding-top: 40px">
+        <form action="..\LoginServlet" method="GET" enctype="multipart/form-data">
+            <h1>Login here</h1>
+            <table style="margin-left: auto; margin-right: auto">
+                <tr>
+                    <td><label for="username"> User Name</label></td>
+                    <td><input type="text" name="uname" placeholder="Enter Username"/></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td><label for="username">Password</label></td>
+                    <td><input type="password" name="pw" placeholder="Enter Password"/></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td><input type="reset"/></td>
+                    <td><input type="submit"/></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
